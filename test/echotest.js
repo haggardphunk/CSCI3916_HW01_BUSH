@@ -18,7 +18,7 @@ describe('Echo', () => {
                 .send('hello world')
                 .end((err, res) => {
                     res.should.have.status(200);
-                    res.text.should.eq('Live Long & Prosper');
+                    res.text.should.eq('hello world');
                     done();
                 });
         });
